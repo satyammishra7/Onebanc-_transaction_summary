@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.main{
+  margin: 20px auto;
+  width: 50%;
+  padding: 2px;
+  border: 2px solid grey;
+}
+
+.upper {
+  border-bottom: 2px solid black;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.profile {
+  padding-left: 14px;
+  margin: 5px;
+  padding-top: 7px;
+  width: 35px;
+  height: 35px;
+  background: rgb(299, 24, 100);
+  border-radius: 70px;
+
+  position: relative;
+  left: 40px;
+  bottom: 35px;
+}
+
+.info {
+  position: relative;
+  left: 90px;
+  bottom: 74px;
+  font-size: 13px;
+}
+
+.name{
+  font-size: large;
+  font-weight: bold;
+}
+
+.number{
+  font-size: small;
+}
+
+.dateline {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.dateline ::before{content: "";
+
+display: block;
+width: 260px;
+height: 2px;
+position: absolute;
+border-top-style: dotted;
+left: 0;
+top: 50%;
+
+}
+.dateline ::after{content: "";
+
+display: block;
+width: 260px;
+height: 2px;
+position: absolute;
+border-top-style: dotted;
+right: 0;
+top: 50%;
+}
+
+.transactionbox {
+  margin-top: 15px;
+  max-width: 250px;
+  max-height: fit-content;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1.5%;
+}
+.leftalign {
+  display: flex;
+  justify-content: flex-start;
+}
+.rightalign {
+  display: flex;
+  justify-content: flex-end;
+}
+.amount {
+  font-size: 40px;
+  padding: 5px;
+}
+
+.id {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.paybtn:hover {
+  background: rgb(9, 161, 40);
+  color: white;
+}
+
+.cancelbtn:hover {
+  background: rgb(241, 25, 25);
+  color: white;
+}
+
+.msg {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.leftdisplay, .rightdisplay {
+  font-size: small;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: -20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.rightdisplay {
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 1280px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .rightdisplay {
+    top: 0px;
+  }
+  .leftdisplay {
+    top: 0px;
+  }
+}
